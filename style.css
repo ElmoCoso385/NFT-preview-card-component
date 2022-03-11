@@ -16,7 +16,7 @@
 }
 
 html {
-  font-size: 75%;
+  font-size: 90%;
 }
 
 body {
@@ -75,6 +75,11 @@ p {
   gap: 0.5rem;
 }
 
+.ethereum-price p {
+  font-weight: 400;
+  color: var(--Cyan);
+}
+
 .time {
   display: flex;
   align-items: center;
@@ -123,7 +128,7 @@ span:hover {
   height: 20rem;
   top: 0;
   background-color: hsla(178, 100%, 50%, 60%);
-  margin-top: 7.3rem;
+  margin-top: 3rem;
   opacity: 0;
   transition: opacity 150ms ease;
   border-radius: 3%;
