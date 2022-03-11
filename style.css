@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --veryDarkBlueMainBG: hsl(217, 54%, 11%);
+  --veryDarkBlueCardBG: hsl(216, 50%, 16%);
+  --veryDarkBlueLine: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 75%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--veryDarkBlueMainBG);
+  min-height: 100vh;
+}
+
+#nft-card {
+  background-color: var(--veryDarkBlueCardBG);
+  padding: 1.5rem;
+  border-radius: 3%;
+  margin: 1rem;
+}
+
+.image-equilibrium img {
+  position: relative;
+  width: 20rem;
+  height: auto;
+  border-radius: 3%;
+}
+
+h2 {
+  color: var(--White);
+  font-weight: 600;
+  padding: 1.5rem 0 0.75rem 0;
+  transition: color 150ms ease;
+}
+
+h2:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.description p {
+  padding: 0.75rem 0 1.5rem 0;
+}
+
+p {
+  color: var(--softBlue);
+  font-weight: 300;
+}
+
+.paycheck {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ethereum-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.line {
+  border-top: 1px solid var(--veryDarkBlueLine);
+  height: 0.125rem;
+  max-width: 20rem;
+  padding: 0;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.user img {
+  width: 2rem;
+  height: auto;
+  border: 0.1rem solid var(--Cyan);
+  border-radius: 50%;
+}
+
+span {
+  color: white;
+  transition: color 150ms ease;
+}
+
+span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.image-equilibrium:hover {
+  cursor: pointer;
+}
+
+.image-equilibrium div {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  top: 0;
+  background-color: hsla(178, 100%, 50%, 60%);
+  margin-top: 7.3rem;
+  opacity: 0;
+  transition: opacity 150ms ease;
+  border-radius: 3%;
+}
+
+.image-equilibrium div:hover {
+  opacity: 1;
+}
+
+.image-equilibrium div img {
+  left: 50%;
+  top: 50%;
+  width: 4rem;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
